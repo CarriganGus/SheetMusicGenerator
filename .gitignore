@@ -1,6 +1,7 @@
 # Audio (large) - keep locally in data/audio/
-data/audio/*
-!data/audio/.gitkeep
+data/audio/**
+!data/audio/**/
+!data/audio/**/.gitkeep
 *.wav
 *.flac
 *.mp3
