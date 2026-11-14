@@ -1,0 +1,22 @@
+# Audio (large) - keep locally in data/audio/
+data/audio/*
+!data/audio/.gitkeep
+*.wav
+*.flac
+*.mp3
+
+# MATLAB
+*.asv
+*.mat
+slprj/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Docs / misc
+*.pdf
+.DS_Store
+Thumbs.db
