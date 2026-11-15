@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #222; background: transparent; }
+  .tbl-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  caption { caption-side: top; text-align: left; font-weight: bold; font-size: 16px; padding: 0 0 8px 2px; }
+  th, td { padding: 8px 10px; text-align: center; border-bottom: 1px solid #ddd; white-space: nowrap; }
+  th { background: #00274c; color: #fff; font-weight: 600; }
+  td.file { text-align: left; font-family: Consolas, Menlo, monospace; }
+  tbody tr:nth-child(even) { background: #f5f7fa; }
+  tr.overall td { font-weight: bold; background: #ffcb05; border-top: 2px solid #00274c; }
+  .note { font-size: 12px; color: #555; padding: 6px 2px 0; }
+</style>
+</head>
+<body>
+<div class="tbl-wrap">
+<table>
+  <caption>Onset Detection Performance &ndash; C Major Scales</caption>
+  <thead>
+    <tr>
+      <th>File</th><th>BPM</th><th>Notes</th><th>Detected</th>
+      <th>TP</th><th>FP</th><th>FN</th>
+      <th>Precision</th><th>Recall</th><th>F1</th>
+      <th>Mean Err (ms)</th><th>Mean |Err| (ms)</th><th>Max |Err| (ms)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="file">Cmaj_120_eighth_asc_dsc</td><td>120</td><td>16</td><td>16</td><td>16</td><td>0</td><td>0</td><td>1.000</td><td>1.000</td><td>1.000</td><td>&minus;5.8</td><td>5.8</td><td>11.6</td></tr>
+    <tr><td class="file">Cmaj_120_qrtr_asc</td><td>120</td><td>8</td><td>8</td><td>8</td><td>0</td><td>0</td><td>1.000</td><td>1.000</td><td>1.000</td><td>&minus;2.7</td><td>2.7</td><td>5.4</td></tr>
+    <tr><td class="file">Cmaj_60_eighth_asc_dsc</td><td>60</td><td>16</td><td>16</td><td>16</td><td>0</td><td>0</td><td>1.000</td><td>1.000</td><td>1.000</td><td>&minus;5.1</td><td>5.2</td><td>11.6</td></tr>
+    <tr><td class="file">Cmaj_60_qrtr_asc</td><td>60</td><td>8</td><td>8</td><td>8</td><td>0</td><td>0</td><td>1.000</td><td>1.000</td><td>1.000</td><td>&minus;5.4</td><td>5.4</td><td>10.8</td></tr>
+    <tr class="overall"><td class="file">Overall</td><td>&ndash;</td><td>48</td><td>48</td><td>48</td><td>0</td><td>0</td><td>1.000</td><td>1.000</td><td>1.000</td><td>&minus;5.0</td><td>5.0</td><td>11.6</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="note">Onsets matched to MIDI ground truth within &plusmn;50 ms. Negative error = detected early. STFT: N = 2048, H = 512 (11.6 ms frame step), f<sub>s</sub> = 44.1 kHz.</div>
+</body>
+</html>

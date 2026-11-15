@@ -1,0 +1,14 @@
+Category,File,BPM,NumRef,NumDet,TP,FP,FN,Precision,Recall,F1,MeanErr_ms,MeanAbsErr_ms,MaxAbsErr_ms
+notes,A4_120_qrtr,120,1,1,1,0,0,1,1,1,0,0,0
+notes,B4_120_qrtr,120,1,1,1,0,0,1,1,1,0,0,0
+notes,C4_120_qrtr,120,1,1,1,0,0,1,1,1,0,0,0
+notes,C5_120_qrtr,120,1,1,1,0,0,1,1,1,0,0,0
+notes,D4_120_qrtr,120,1,1,1,0,0,1,1,1,0,0,0
+notes,E4_120_qrtr,120,1,1,1,0,0,1,1,1,0,0,0
+notes,F4_120_qrtr,120,1,1,1,0,0,1,1,1,0,0,0
+notes,G4_120_qrtr,120,1,1,1,0,0,1,1,1,0,0,0
+scales,Cmaj_120_eighth_asc_dsc,120,16,16,16,0,0,1,1,1,-5.8,5.8,11.6
+scales,Cmaj_120_qrtr_asc,120,8,8,8,0,0,1,1,1,-2.7,2.7,5.4
+scales,Cmaj_60_eighth_asc_dsc,60,16,16,16,0,0,1,1,1,-5.1,5.2,11.6
+scales,Cmaj_60_qrtr_asc,60,8,8,8,0,0,1,1,1,-5.4,5.4,10.8
+ALL,Overall,NaN,56,56,56,0,0,1,1,1,-4.3,4.3,11.6
